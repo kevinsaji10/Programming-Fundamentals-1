@@ -1,0 +1,128 @@
+question 11
+
+int num_digit_pairs(char s[]) {
+	int length_s = strlen(s);
+	int count = 0;
+	for (int i =0 ; i< length_s-1; i++) {
+		if (s[i] == s[i+1]) {
+			count++;
+			i++;
+		}
+		return count;
+		
+
+question 12
+
+char **get_lucky_ones(person table[], int n, int *r_size) {
+	int count = 0;
+	char **result = calloc(n, sizeof(char*);
+	char ptr = *result;
+	// check all cases except first and last
+	char current_gender = table[i].gender;
+	for (int i = 1; i< n-1; i++) {
+		if (table[i-1].gender != current_gender && table[i+1].gender != current_gender) {
+			*ptr = table[i.gender;
+			count++;
+	}
+	current_gender = table[0].gender;
+	if (table[1].gender != current_gender && table[n-1].gender != current_gender) {
+		*ptr = table[i].gender;
+		ptr++;
+		count++;
+	}
+	current_gender = table[n-1].gender;
+	if (table[0.gender != current_gender && table[n-2].gender != current_gender) {
+		*ptr = table[i].gender;
+		ptr++;
+		count++;
+	}
+	result = realloc(result, count);
+	*_size = count;
+	return result;
+		
+		
+	
+}
+
+question 13
+
+find the first caps letter
+- 
+
+void generate_acryomn(char sentence[], char **result)
+{
+    int length = strlen(sentence);
+    *result = calloc(length + 1, sizeof(char));
+    char *ptr = *result;
+    int count = 0;
+    while (*sentence != '\0')
+    {
+        if (isupper(*sentence))
+        {
+            *ptr = *sentence;
+            ptr++;
+            count++;
+        }
+        while (*sentence != ' ' && *sentence != '-' && *sentence != '\0')
+        {
+            sentence++;
+        }
+        if (*sentence != '\0')
+        {
+            sentence++;
+        }
+    }
+    if (count == 0) {
+        return;
+    }
+    *result = realloc(*result, count * sizeof(char));
+}
+
+question 14
+
+durian
+apple
+durian
+pear
+1
+
+question 15
+
+1. line 28: hr < 12
+2. the or operator on line 30 should be and
+3. line 38 should be or operators and not and operators
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

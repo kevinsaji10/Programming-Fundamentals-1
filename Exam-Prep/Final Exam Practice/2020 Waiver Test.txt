@@ -1,0 +1,92 @@
+q1. A
+q2. A
+q3. C
+q4. B
+q5. B
+q6. A
+q7. A
+q8. C
+q9. E
+q10. D
+
+Question 1
+
+#include <stdio.h>
+
+int add_minus(int num1, int num2, char op) {
+	if (op == '+') {
+		return num1 + num 2;
+	else {
+		return num1 - num2;
+	}
+}
+
+Question 2
+
+#include <stdio.h>
+int main (void) {
+	int a;
+	int b;
+	int c;
+	printf("Enter a: ");
+	scanf("%d\n", &a);
+	printf("Enter b: ");
+	scanf("%d\n", &b);
+	printf("Enter c: ");
+	scanf("%d\n", &c);
+	if (a != b && b != c && a != c) {
+		printf("scalene\n");
+	else if (a == b && b == c && a == c) {
+		printf("equilateral\n);
+	} else {
+		printf("isosceles\n);
+	}
+}
+
+Question 3
+
+#include <stdio.h>
+typedef struct {
+char name[100];
+int age;
+} human;
+
+human get_human(human array[], int n) {
+	int oldest_index = 0;
+	for (int i = 0; i<n; i++) {
+		if ((array[i]).age > array[oldest_index].age){
+			oldest_index = i;
+		}
+	}
+	return array[oldest_index];
+
+Question 4
+
+durian2
+apple5
+kiwi-pear9
+durian11
+kiwi-15
+durian17
+18
+
+
+Question 5
+
+void create_array(int start, int n, int step, int **result) {
+	*result = calloc( n, sizeof(int));
+	char ptr = *result;
+	for (int i = 0; i< n; i++) {
+		ptr[i] = start + (step * i);
+	}
+
+Question 6
+
+2. the combined in the combine function should be a pointer to a pointer
+3. in both for loops the i<= n1 and n2 should only be smaller than. the equal sign should be dropped
+4. combined should be equal to the address of result
+5. wrong size of dynamic memory, forgot the brackets
+	
+	
+
+

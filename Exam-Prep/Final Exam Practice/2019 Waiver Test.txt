@@ -1,0 +1,88 @@
+B
+E
+A
+B
+C
+D
+A
+C
+C
+B
+
+Question 1
+
+print_odd_digits(int string[]) {
+	while(*string != '\0') {
+		if ((*string - 48) % 2 != 0) {
+			printf("%c", *string);
+		}
+		string++;
+	}
+}
+
+Question 2
+
+
+#include <stdio.h>
+int main (void) {
+	int start;
+	int end;
+	printf("---");
+	printf("enter start: ");
+	scanf("%d", &start);
+	printf("enter end: ");
+	scanf("%d", &end);
+	for (int i = start; i<=end; i++) {
+		if (i%3 == 0 && i%5 == 0) {
+			printf("*# ");
+		} else if (i %3 == 0) {
+			printf("* ");
+		} else if (i % 5 == 0) {
+			printf("# ");
+		} else {
+			printf("%d ", i);
+		
+	}
+	printf("\n");
+	printf("---");
+}
+	
+
+Question 3
+1
+5
+6
+24
+9
+
+Question 4
+
+void swap pairs(int arr[], int n) {
+	for (int i = 0; i< n-1; i+=2) {
+		int temp = arr[i];
+		arr[i] = arr[i+1];
+		arr[i+1] = temp;
+	}
+
+Question 5
+
+bool same_dashes(char string1[], char string2[]) [
+	if (strlen(string1) != strlen(string2) {
+		return false;
+	}
+	for (int i = 0; i< strlen(string1); i++) {
+		if ((string1[i] == '-' && string2[i] != '-') || (string2[i] == '-' && string1[i] != '-')) {
+			return false;
+		}
+	}
+	return true;
+}
+
+Question 6
+
+1. row should be equal to 0 initially
+2. -1 in num spaces
+3.  num chars +1
+4. continue looping should be or operator
+5. while !continuelooping
+	

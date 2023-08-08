@@ -1,2 +1,2 @@
-# Programming-Fundamentals-1
-C Programming
+# Introduction to Programming (C)
+- Everything related to SMU CS101
